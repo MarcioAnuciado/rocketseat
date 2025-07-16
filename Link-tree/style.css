@@ -43,6 +43,9 @@ body {
 
 #links ul {
     list-style: none;
+
+    padding: 24px;
+
     display: flex;
     flex-direction: column;
     gap: 16px;  /** Coloca espaço entre os elementos não e em cima nem em baixo **/
@@ -51,7 +54,7 @@ body {
 
 #links ul li a {
     padding: 16px 24px;
-    border-radius: 5px;
+    border-radius: 8px;
 
     list-style-type: none;
     text-decoration: none;
@@ -76,4 +79,22 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1.5px solid white;
     border-radius: 5px;
+}
+
+#socialmedia {
+    display: flex;
+    gap: 16px;
+
+    padding: 24px; 
+}
+
+#socialmedia > a {
+    color: white;
+    font-size: 24px;
+
+    padding: 16px;
+}
+
+#socialmedia > a :hover {
+    background-color: white;
 }
