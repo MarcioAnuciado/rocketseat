@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#container {
+    flex: auto;
+    width: 312px;
+    margin: 55px auto 0px;
+}
+
+#profyle {
+    text-align: center;
+}
+
+#profyle > img {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#profyle > p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#links {
+    text-align: center;
+}
+
+
+#links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  /** Coloca espaço entre os elementos não e em cima nem em baixo **/
+}
+
+
+#links ul li a {
+    padding: 16px 24px;
+    border-radius: 5px;
+
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    justify-content: center;  /** alinha os elementos ao centro, neste caso **/
+    align-items: center;  /** alinha os intens no centro da caixa **/
+
+    backdrop-filter: blur(4px);  /** adiciona um embaçado no elemento **/
+    -webkit-backdrop-filter: blur(4px);  /** adiciona uma propriedade que posibilita a compatibilidade a outros brawser (safari, outros) **/
+
+    transition: background 0.5;
+}
+
+
+
+#links ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+    border-radius: 5px;
+}
